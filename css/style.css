@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Karla:ital,wght@1,800&family=Lato:ital,wght@1,900&family=Libre+Baskerville:ital@1&family=Rampart+One&family=Roboto+Slab:wght@900&family=Rowdies:wght@300&family=Shantell+Sans:ital,wght@1,800&family=Ubuntu:wght@300;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+html {
+  line-height: 1.4;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/img/hero-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 5rem;
+}
+.header .navigation {
+  width: 100%;
+  padding: 2rem 0;
+  margin-bottom: 15rem;
+}
+.header .navigation .nav__bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .navigation .nav__bar .logo span {
+  color: white;
+  font-size: 2.4rem;
+  font-family: Dancing Script;
+}
+.header .navigation .nav__bar .nav a {
+  text-decoration: none;
+  color: white;
+  font-family: Ubuntu;
+  font-size: 1.2rem;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.header .navigation .nav__bar .nav a:hover {
+  color: #FFBE33;
+  transition: 0.5s;
+}
+.header .navigation .nav__bar .user__option {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.header .navigation .nav__bar .user__option .user__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.header .navigation .nav__bar .user__option .user__content .user__item i {
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.header .navigation .nav__bar .user__option .user__content .user__item i:hover {
+  color: #FFBE33;
+  transition: 0.5s;
+}
+.header .navigation .nav__bar .user__option .order__button button {
+  padding: 0.8rem 1.8rem;
+  border-radius: 20px;
+  border: none;
+  background-color: #FFBE33;
+  color: white;
+  cursor: pointer;
+}
+.header .navigation .nav__bar .user__option .order__button button:hover {
+  background-color: #cb8b00;
+  transition: 0.5s;
+}
+.header .banner {
+  width: 100%;
+}
+.header .banner .swiper {
+  width: 100%;
+}
+.header .banner .swiper .swiper-wrapper {
+  width: 100%;
+}
+.header .banner .swiper .swiper-wrapper .swiper-slide {
+  width: 100%;
+}
+.header .banner .swiper .swiper-wrapper .swiper-slide h2 {
+  color: white;
+  font-size: 2.8rem;
+  font-family: Dancing Script;
+  margin-bottom: 1rem;
+}
+.header .banner .swiper .swiper-wrapper .swiper-slide p {
+  color: white;
+  font-family: Ubuntu;
+  width: 45%;
+  margin-bottom: 2rem;
+}
+.header .banner .swiper .swiper-wrapper .swiper-slide button {
+  padding: 0.9rem 2.6rem;
+  border-radius: 40px;
+  background-color: #FFBE33;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+.header .banner .swiper .swiper-wrapper .swiper-slide button:hover {
+  background-color: #cb8b00;
+  transition: 0.5s;
+}
+.header .banner .swiper .swiper-button-prev {
+  display: none;
+}
+.header .banner .swiper .swiper-button-next {
+  display: none;
+}
+.header .banner .swiper .swiper-scrollbar {
+  display: none;
+}
+.header .banner .swiper .swiper-pagination-bullet {
+  background-color: #FFBE33;
+  padding: 0.5rem 0.5rem;
+}
+
+.section {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+.section .section__content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  align-items: center;
+}
+.section .section__content .section__item {
+  width: 100%;
+  padding: 1rem 1rem;
+  background-color: #222831;
+  border-radius: 20px;
+}
+.section .section__content .section__item .item__content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section .section__content .section__item .item__content .content__img img {
+  width: 65%;
+  border-radius: 100%;
+  border: 4px solid #FFBE33;
+}
+.section .section__content .section__item .item__content .item__title {
+  width: 100%;
+}
+.section .section__content .section__item .item__content .item__title h3 {
+  color: white;
+  font-family: Dancing Script;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+.section .section__content .section__item .item__content .item__title h6 {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.section .section__content .section__item .item__content .item__title h6 span {
+  font-size: 2.4rem;
+  color: white;
+  font-family: Dancing Script;
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+.section .section__content .section__item .item__content .item__title button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  border: none;
+  background-color: #FFBE33;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.section .section__content .section__item .item__content .item__title button:hover {
+  background-color: #cb8b00;
+  transition: 0.5s;
+}
+
+.design__services {
+  width: 100%;
+}
+.design__services .design__title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.design__services .design__title h2 {
+  font-family: Dancing Script;
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+}
+.design__services .design__title .title__content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+  text-align: center;
+}
+.design__services .design__title .title__content .blog__item {
+  text-decoration: none;
+  color: black;
+  font-family: Ubuntu;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.design__img {
+  width: 100%;
+  padding: 4.8rem 0;
+}
+
+.hide {
+  display: block;
+}
+
+.show {
+  display: none;
+}
+
+.blog__container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-bottom: 1rem;
+}
+.blog__container .blog__container__item {
+  width: 100%;
+  background-color: #222831;
+  border-radius: 20px;
+}
+.blog__container .blog__container__item .box__img {
+  background-color: #F1F2F3;
+  padding: 2rem 2rem;
+  border-radius: 0 0 0 45px;
+  height: 245px;
+}
+.blog__container .blog__container__item .box__img img {
+  width: 60%;
+  margin: 0 auto;
+}
+.blog__container .blog__container__item .box__title {
+  width: 100%;
+  color: white;
+  padding: 2rem 2rem;
+}
+.blog__container .blog__container__item .box__title h3 {
+  font-family: Ubuntu;
+  margin-bottom: 0.5rem;
+}
+.blog__container .blog__container__item .box__title p {
+  font-family: Karla;
+  margin-bottom: 2rem;
+}
+.blog__container .blog__container__item .box__title .box__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.blog__container .blog__container__item .box__title .box__content h6 {
+  font-size: 1.2rem;
+  font-family: Roboto Slab;
+}
+.blog__container .blog__container__item .box__title .box__content a {
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #FFBE33;
+  text-align: center;
+}
+.blog__container .blog__container__item .box__title .box__content a i {
+  color: white;
+  font-size: 1.4rem;
+  margin-top: 0.8rem;
+}
+
+.view__button {
+  width: 100%;
+  text-align: center;
+}
+.view__button button {
+  padding: 0.8rem 2rem;
+  border-radius: 35px;
+  border: none;
+  color: white;
+  background-color: #FFBE33;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.about {
+  width: 100%;
+  background-color: #222831;
+  padding: 4rem 0;
+  margin-bottom: 5rem;
+}
+.about .about__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.about .about__content .about__img {
+  text-align: end;
+}
+.about .about__content .about__img img {
+  width: 90%;
+}
+.about .about__content .about__item {
+  width: 70%;
+}
+.about .about__content .about__item h2 {
+  color: white;
+  font-family: Dancing Script;
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+}
+.about .about__content .about__item p {
+  width: 75%;
+  color: white;
+  font-family: Karla;
+  margin-bottom: 1.5rem;
+}
+.about .about__content .about__item button {
+  padding: 0.8rem 2.4rem;
+  border-radius: 35px;
+  border: none;
+  background-color: #FFBE33;
+  color: white;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.about .about__content .about__item button:hover {
+  background-color: #cb8b00;
+  transition: 0.5s;
+}
+
+.table {
+  width: 100%;
+}
+.table .table__title {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.table .table__title h2 {
+  font-family: Dancing Script;
+  font-size: 2.4rem;
+}
+.table .table__content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.table .table__content .table__input input {
+  width: 90%;
+  display: block;
+  margin-bottom: 1.6rem;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+}
+.table .table__content .table__input textarea {
+  width: 90%;
+  display: block;
+  margin-bottom: 1.6rem;
+  padding: 3rem 1rem;
+  border-radius: 10px;
+}
+.table .table__content .map iframe {
+  border-radius: 10px;
+}
+.table .book__button {
+  width: 100%;
+}
+.table .book__button button {
+  padding: 0.7rem 2.2rem;
+  border-radius: 30px;
+  border: none;
+  background-color: #FFBE33;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.table .book__button button:hover {
+  background-color: #cb8b00;
+  transition: 0.5s;
+}
+
+.hide {
+  display: block;
+}
+
+.show {
+  display: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}/*# sourceMappingURL=style.css.map */
