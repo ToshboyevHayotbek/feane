@@ -16,7 +16,7 @@
 </head>
 <body>
     <!-- header -->
-    <header class="header">
+    <header class="header" id="home">
         <div class="container">
             <div class="navigation">
                 <div class="nav__bar">
@@ -24,10 +24,10 @@
                         <span>Feane</span>
                     </div>
                     <div class="nav">
-                        <a href="#">Home</a>
-                        <a href="#">Menu</a>
-                        <a href="#">About</a>
-                        <a href="#">Book Table</a>
+                        <a href="#home">Home</a>
+                        <a href="#menu">Menu</a>
+                        <a href="#about">About</a>
+                        <a href="#table">Book Table</a>
                     </div>
                     <div class="user__option">
                         <div class="user__content">
@@ -48,6 +48,7 @@
                             <button>Order Online</button>
                         </div>
                     </div>
+                    <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
             <!-- banner -->
@@ -126,7 +127,7 @@
     </section>
 
     <!-- design menu -->
-    <div class="design__services">
+    <div class="design__services" id="menu">
         <div class="design__title">
             <h2>Our Menu</h2>
             <div class="title__content">
@@ -416,7 +417,7 @@
     </div>
 
     <!-- about -->
-    <div class="about">
+    <div class="about" id="about">
         <div class="container">
             <div class="about__content">
                 <div class="about__img">
@@ -432,7 +433,7 @@
     </div>
 
     <!-- table -->
-    <div class="table">
+    <div class="table" id="table">
         <div class="container">
             <div class="table__title">
                 <h2>Book A Table</h2>
@@ -457,17 +458,164 @@
         </div>
     </div>
 
+    <!-- says -->
+    <div class="says">
+        <div class="container">
+            <div class="says__title">
+                <h2>What Says Our Customers</h2>
+            </div>
+            <!-- banner -->
+            <div class="banner">
+                <!-- Slider main container -->
+    <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <!-- 1 -->
+      <div class="swiper-slide">
+        <div class="swiper__content">
+            <div class="swiper__item">
+                <div class="swiper__title">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                    </p>
+                    <h3>Moana Michell</h3>
+                    <span>magna aliqua</span>
+                </div>
+                <div class="swiper__img">
+                    <img src="/img/client1.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper__item">
+                <div class="swiper__title">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                    </p>
+                    <h3>Mike Hamell</h3>
+                    <span>magna aliqua</span>
+                </div>
+                <div class="swiper__img">
+                    <img src="/img/client2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="swiper-slide">
+        <div class="swiper__content">
+            <div class="swiper__item">
+                <div class="swiper__title">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                    </p>
+                    <h3>Mike Hamell</h3>
+                    <span>magna aliqua</span>
+                </div>
+                <div class="swiper__img">
+                    <img src="/img/client2.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper__item">
+                <div class="swiper__title">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                    </p>
+                    <h3>Moana Michell</h3>
+                    <span>magna aliqua</span>
+                </div>
+                <div class="swiper__img">
+                    <img src="/img/client1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 3 -->
+      <div class="swiper-slide">
+        <div class="swiper__content">
+            <div class="swiper__item">
+                <div class="swiper__title">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                    </p>
+                    <h3>Moana Michell</h3>
+                    <span>magna aliqua</span>
+                </div>
+                <div class="swiper__img">
+                    <img src="/img/client1.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper__item">
+                <div class="swiper__title">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                    </p>
+                    <h3>Mike Hamell</h3>
+                    <span>magna aliqua</span>
+                </div>
+                <div class="swiper__img">
+                    <img src="/img/client2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__item">
+                    <h3>Contact Us</h3>
+                    <a href="#"><i class="fa-solid fa-location-dot"></i>Location</a>
+                    <a href="#"><i class="fa-solid fa-phone"></i>Call +90 535 19 01</a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i>feane@gmail.com</a>
+                </div>
+                <div class="footer__item">
+                    <h2>Feane</h2>
+                    <p>Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with</p>
+                    <div class="btn__content">
+                        <div class="btn__item">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="btn__item">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="btn__item">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="btn__item">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        <div class="btn__item">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <h3>Opening</h3>
+                    <span>Everyday</span>
+                    <p>10.00 Am - 10.00 Pm</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-
-
-
-
-
-
-
-
-
+    <div class="copyright">
+        <div class="container">
+            <div class="copyright__item">
+                <p>© 2023 All Rights Reserved By Free Html Templates</p>
+                <b>© Distributed By ThemeWagon</b>
+            </div>
+        </div>
+    </div>
 
 
     <!-- java script link -->

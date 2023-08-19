@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Karla:ital,wght@1,800&family=Lato:ital,wght@1,900&family=Libre+Baskerville:ital@1&family=Rampart+One&family=Roboto+Slab:wght@900&family=Rowdies:wght@300&family=Shantell+Sans:ital,wght@1,800&family=Ubuntu:wght@300;700&display=swap");
+@import url(/css/_global.scss);
 * {
   padding: 0;
   margin: 0;
@@ -47,6 +48,7 @@ img {
   color: white;
   font-size: 2.4rem;
   font-family: Dancing Script;
+  cursor: pointer;
 }
 .header .navigation .nav__bar .nav a {
   text-decoration: none;
@@ -90,6 +92,9 @@ img {
 .header .navigation .nav__bar .user__option .order__button button:hover {
   background-color: #cb8b00;
   transition: 0.5s;
+}
+.header .navigation .nav__bar .fa-bars {
+  display: none;
 }
 .header .banner {
   width: 100%;
@@ -367,6 +372,7 @@ img {
 
 .table {
   width: 100%;
+  margin-bottom: 5rem;
 }
 .table .table__title {
   width: 100%;
@@ -416,6 +422,168 @@ img {
 .table .book__button button:hover {
   background-color: #cb8b00;
   transition: 0.5s;
+}
+
+.says {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.says .says__title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.says .says__title h2 {
+  color: black;
+  font-family: Dancing Script;
+  font-size: 2.2rem;
+}
+.says .banner {
+  width: 100%;
+}
+.says .banner .swiper {
+  width: 100%;
+}
+.says .banner .swiper .swiper-wrapper {
+  width: 100%;
+}
+.says .banner .swiper .swiper-wrapper .swiper-slide {
+  width: 100%;
+}
+.says .banner .swiper .swiper-wrapper .swiper-slide .swiper__content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 5rem;
+}
+.says .banner .swiper .swiper-wrapper .swiper-slide .swiper__content .swiper__item {
+  width: 100%;
+}
+.says .banner .swiper .swiper-wrapper .swiper-slide .swiper__content .swiper__item .swiper__title {
+  padding: 1rem 1rem;
+  background-color: #222831;
+  color: white;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+.says .banner .swiper .swiper-wrapper .swiper-slide .swiper__content .swiper__item .swiper__title p {
+  font-family: Karla;
+  margin-bottom: 0.5rem;
+  width: 95%;
+}
+.says .banner .swiper .swiper-wrapper .swiper-slide .swiper__content .swiper__item .swiper__title h3 {
+  font-family: Ubuntu;
+  color: #FFBE33;
+}
+.says .banner .swiper .swiper-wrapper .swiper-slide .swiper__content .swiper__item .swiper__title span {
+  font-family: Roboto Slab;
+}
+.says .banner .swiper .swiper-wrapper .swiper-slide .swiper__content .swiper__item .swiper__img img {
+  width: 20%;
+  border-radius: 100%;
+  border: 6px solid #FFBE33;
+}
+.says .banner .swiper .swiper-button-prev {
+  display: none;
+}
+.says .banner .swiper .swiper-button-next {
+  display: none;
+}
+.says .banner .swiper .swiper-scrollbar {
+  display: none;
+}
+
+.footer {
+  width: 100%;
+  background-color: #222831;
+  padding: 3rem 0;
+}
+.footer .footer__content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.footer .footer__content .footer__item {
+  color: white;
+  text-align: center;
+}
+.footer .footer__content .footer__item h3 {
+  font-family: Dancing Script;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.footer .footer__content .footer__item a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  margin-bottom: 0.8rem;
+  font-family: Ubuntu;
+}
+.footer .footer__content .footer__item a:hover {
+  color: #FFBE33;
+  transition: 0.5s;
+}
+.footer .footer__content .footer__item a i {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+.footer .footer__content .footer__item h2 {
+  font-family: Dancing Script;
+  font-size: 3rem;
+}
+.footer .footer__content .footer__item p {
+  font-family: Karla;
+  margin-bottom: 1.5rem;
+}
+.footer .footer__content .footer__item .btn__content {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+  margin: 0 auto;
+}
+.footer .footer__content .footer__item .btn__content .btn__item {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+}
+.footer .footer__content .footer__item .btn__content .btn__item:hover i {
+  color: #FFBE33;
+  transition: 0.5s;
+}
+.footer .footer__content .footer__item .btn__content .btn__item i {
+  color: #222831;
+  margin-top: 0.5rem;
+}
+.footer .footer__content .footer__item span {
+  font-family: Ubuntu;
+}
+.footer .footer__content .footer__item p {
+  margin-top: 1rem;
+}
+
+.copyright {
+  width: 100%;
+  background-color: #222831;
+  padding: 2rem 0;
+}
+.copyright .copyright__item {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.copyright .copyright__item p {
+  font-family: Ubuntu;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+.copyright .copyright__item b {
+  font-family: Ubuntu;
 }
 
 .hide {
